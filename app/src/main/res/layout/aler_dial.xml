@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/EndGreenColor"
+    android:outlineSpotShadowColor="@color/EndGreenColor"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1E8EB"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/yeonsung"
+            android:text="Confirmation"
+            android:textColor="@color/EndGreenColor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="monospace"
+            android:text="Do you want to continue with the selected country?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_cansel"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_green_90"
+                android:fontFamily="@font/yeonsung"
+                android:outlineAmbientShadowColor="@color/EndGreenColor"
+                android:outlineSpotShadowColor="@color/EndGreenColor"
+                android:text="Cansel"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_yes"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_green_90"
+                android:fontFamily="@font/yeonsung"
+                android:outlineAmbientShadowColor="@color/EndGreenColor"
+                android:outlineSpotShadowColor="@color/EndGreenColor"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
